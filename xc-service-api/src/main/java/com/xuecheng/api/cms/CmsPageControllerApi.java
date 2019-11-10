@@ -40,7 +40,7 @@ public interface CmsPageControllerApi {
      * @param cmsPage
      * @return
      */
-    public CmsPageResult updatePage(CmsPage cmsPage);
+    public CmsPageResult updatePage(String id,CmsPage cmsPage);
 
 
     /**

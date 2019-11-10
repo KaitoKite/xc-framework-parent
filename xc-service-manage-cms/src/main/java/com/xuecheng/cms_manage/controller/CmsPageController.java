@@ -31,9 +31,9 @@ public class CmsPageController implements CmsPageControllerApi {
     }
 
     @Override
-    @PostMapping("/updatePage")
-    public CmsPageResult updatePage(@RequestBody CmsPage cmsPage) {
-        return cmsPageService.updatePage(cmsPage);
+    @PostMapping("/updatePage/{id}")
+    public CmsPageResult updatePage(@PathVariable("id")String id,@RequestBody CmsPage cmsPage) {
+        return cmsPageService.updatePage(id,cmsPage);
     }
 
     @Override
